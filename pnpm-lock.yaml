@@ -34,8 +34,11 @@ importers:
       dotenv-cli: ^7.0.0
       eslint: ^8.33.0
       eslint-config-next: ^13.1.6
+      eslint-config-prettier: ^8.6.0
       next: ^13.1.6
+      next-seo: ^5.15.0
       postcss: ^8.4.21
+      prettier: 2.8.3
       react: 18.2.0
       react-dom: 18.2.0
       tailwindcss: ^3.2.4
@@ -43,6 +46,7 @@ importers:
     dependencies:
       '@acme/tailwind-config': link:../../packages/config/tailwind
       next: 13.1.6_biqbaboplfbrettd7655fr4n2y
+      next-seo: 5.15.0_3vryta7zmbcsw4rrqf4axjqggm
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
@@ -53,7 +57,9 @@ importers:
       dotenv-cli: 7.0.0
       eslint: 8.33.0
       eslint-config-next: 13.1.6_4vsywjlpuriuw3tl5oq6zy5a64
+      eslint-config-prettier: 8.6.0_eslint@8.33.0
       postcss: 8.4.21
+      prettier: 2.8.3
       tailwindcss: 3.2.4_postcss@8.4.21
       typescript: 4.9.5
 
@@ -1303,7 +1309,6 @@ packages:
       eslint: '>=7.0.0'
     dependencies:
       eslint: 8.33.0
-    dev: false
 
   /eslint-import-resolver-node/0.3.6:
     resolution: {integrity: sha512-0En0w03NRVMn9Uiyn8YRPDKvWjxCWkslUEhGNTdGx15RvPJYQ+lbOlqrlNI2vEAs4pDYK4f/HN2TbDmk5TP0iw==}
@@ -2136,6 +2141,18 @@ packages:
   /natural-compare/1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
+  /next-seo/5.15.0_3vryta7zmbcsw4rrqf4axjqggm:
+    resolution: {integrity: sha512-LGbcY91yDKGMb7YI+28n3g+RuChUkt6pXNpa8FkfKkEmNiJkeRDEXTnnjVtwT9FmMhG6NH8qwHTelGrlYm9rgg==}
+    peerDependencies:
+      next: ^8.1.1-canary.54 || >=9.0.0
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      next: 13.1.6_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
   /next/13.1.6_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-hHlbhKPj9pW+Cymvfzc15lvhaOZ54l+8sXDXJWm3OBNBzgrVj6hwGPmqqsXg40xO1Leq+kXpllzRPuncpC0Phw==}
     engines: {node: '>=14.6.0'}
@@ -2470,7 +2487,6 @@ packages:
     resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
-    dev: false
 
   /prop-types/15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
